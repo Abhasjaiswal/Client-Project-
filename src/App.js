@@ -4,8 +4,8 @@ import OurServices from "./Components/OurServices/Services";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar />
-      <OurServices /> */}
+      <Navbar />
+      <OurServices />
     </div>
   );
 }
