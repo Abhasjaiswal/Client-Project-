@@ -1,0 +1,88 @@
+/* LanyardSolutions.css */
+.lanyard-container {
+    background-color: #1b1f74;
+    color: #ffffff;
+    padding: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+.text-image-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.text-section {
+    width: 60%;
+}
+
+.text-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.image-section {
+    width: 35%;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.industry-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.industry-item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .text-image-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-section {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .industries-grid {
+        grid-template-columns: 1fr;
+    }
+}
