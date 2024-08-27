@@ -8,12 +8,20 @@ import React from "react";
 // import LandingContact from "./Components/LandContact/contact"
 // import OurClient from "./Components/OurClient/Client"
 import Landing from "./Pages/Landing/Lading"
+import Business from "./Pages/Services/Business/Business"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Landing />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/business" element={<Business />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
+
 
 export default App;

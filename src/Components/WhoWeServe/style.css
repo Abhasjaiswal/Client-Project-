@@ -1,0 +1,39 @@
+/* styles.css */
+
+.business-section2 {
+    padding: 50px 20px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-width: 800px;
+    margin: auto;
+}
+
+.container2 {
+    text-align: left;
+}
+
+.section-header2 {
+    margin-bottom: 30px;
+}
+
+.section-subtitle2 {
+    color: #F00; /* Red color */
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.section-title2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.section-content2 p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 16px;
+}

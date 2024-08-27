@@ -1,0 +1,55 @@
+.business-section {
+    position: relative;
+    background-image: url('bg.jpg');
+    background-color: #200071; /* Deep purple */
+    padding: 40px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 15vh;
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Overlay for darkening the background */
+    z-index: 1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff; /* White text color */
+  }
+  
+  .content h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+  
+  .divider {
+    width: 60px;
+    height: 4px;
+    background-color: #ff0000; /* Red color */
+    margin-top: 10px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .content h2 {
+      font-size: 2rem;
+    }
+  
+    .divider {
+      width: 40px;
+      height: 3px;
+    }
+  }
+  
