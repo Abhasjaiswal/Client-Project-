@@ -4,6 +4,7 @@ import Identity from "./Components/Identity/Identity";
 import OurServices from "./Components/OurServices/Services";
 import Solutions from "./Components/Solutions/Solutions";
 import Lanyards from "./Components/Lanyards/Lanyards";
+import Videos from "./Components/Videos/Videos";
 import Footer from "./Components/Footer/Footer";
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <OurServices />
       <Solutions />
       <Lanyards/>
+      <Videos />
       <Footer />
     </div>
   );
