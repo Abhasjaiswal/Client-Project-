@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
-
+import LanImage from "../../assets/Images/Landyards.JPG"
+import IDImage from "../../assets/Images/ID.JPG"
 const ServicesSection = () => {
   return (
     <section className="services-section">
@@ -14,16 +15,16 @@ const ServicesSection = () => {
         </div>
         <div className="services-content">
           <div className="service-item animated fadeIn">
-            <img src="" alt="Service2" />
-            <h2>Serive1</h2>
+            <img src={LanImage} alt="Service2" />
+            <h2>Lanyards</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae aperiam eius natus, magnam cumque dignissimos hic rem, quisquam voluptatem tempore ab error, expedita nulla doloremque. Recusandae molestiae nostrum porro culpa?
             </p>
             <a href="#" className="learn-more-btn">LEARN MORE</a>
           </div>
           <div className="service-item animated fadeIn">
-            <img src="" alt="Service2" />
-            <h2>Service2</h2>
+            <img src={IDImage} alt="Service2" />
+            <h2>ID Cards</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt totam reiciendis placeat magni, dolore voluptates nam, a commodi repellendus explicabo eaque provident suscipit ad fuga. Expedita laudantium voluptatum commodi voluptate!
             </p>
