@@ -1,0 +1,54 @@
+.clients-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; /* White background */
+  }
+  
+  .clients-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .clients-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #6d23f2; /* Add a line under the heading */
+    margin: 10px auto 0 auto;
+  }
+  
+  .clients-slider {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .client-logo img {
+    width: 100%;
+    max-width: 120px; /* Adjust the size of logos */
+    margin: 0 auto;
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Add responsive behavior */
+  @media (max-width: 768px) {
+    .clients-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .client-logo img {
+      max-width: 80px;
+    }
+  
+    .clients-slider {
+      width: 100%;
+    }
+  }
+  
