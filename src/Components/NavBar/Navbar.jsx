@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Navbar = () => {
   return (
@@ -10,16 +11,16 @@ const Navbar = () => {
           <span>abc@gmail.com</span>
         </div>
         <div className="social-icons">
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook"></i>
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-youtube"></i>
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i>
           </a>
         </div>
@@ -30,7 +31,7 @@ const Navbar = () => {
       </div>
 
       <nav className="main-nav">
-        <img src alt="Logo" className="logo" />
+        <img src="path/to/your/logo.png" alt="Logo" className="logo" />
         <ul>
           <li><a href="/home">Home</a></li>
           <li><a href="#">Products</a></li>

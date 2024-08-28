@@ -9,6 +9,7 @@ import React from "react";
 // import OurClient from "./Components/OurClient/Client"
 import Landing from "./Pages/Landing/Lading"
 import Business from "./Pages/Services/Business/Business"
+import AboutUs from "./Pages/AboutUs/About"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Landing />} />
           <Route path="/business" element={<Business />} />
+          <Route path="/about" element={<AboutUs/>}/>
         </Routes>
       </Router>
     </div>
