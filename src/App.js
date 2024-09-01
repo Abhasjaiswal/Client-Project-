@@ -2,7 +2,6 @@ import React from "react";
 import Landing from "./Pages/Landing/Lading"
 import Business from "./Pages/Services/Business/Business"
 import AboutUs from "./Pages/AboutUs/About"
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Expertise from "./Pages/Expertise/Expertise"
 import CMS from "./Pages/Expertise/CMS/CMS"
 import Data from "./Pages/Expertise/Data/Data"
@@ -10,6 +9,7 @@ import Digital from "./Pages/Expertise/Digital/Digital"
 import Markets from "./Pages/Expertise/Markets/Markets"
 import Personalization from "./Pages/Expertise/Personalization/Personalization"
 import Production from "./Pages/Expertise/Production/Production"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
