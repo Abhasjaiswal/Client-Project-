@@ -112,4 +112,32 @@ body {
       margin-bottom: 10px;
     }
   }
-  
+  /* Dropdown Menu */
+/* Dropdown Menu */
+.dropdown-menu {
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Align items in a column */
+  position: absolute; /* Position it absolutely to the parent */
+  background-color: white; /* Background color for the dropdown */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for better visibility */
+  padding: 10px 0; /* Space inside the dropdown */
+  z-index: 1000; /* Ensure it's on top */
+  min-width: 200px; /* Ensure it has a fixed minimum width */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.dropdown-menu li {
+  list-style: none; /* Remove bullet points */
+  padding: 8px 16px; /* Add padding for better spacing */
+}
+
+.dropdown-menu li a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Link color */
+  display: block; /* Ensures full clickable area */
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1; /* Change background on hover */
+}
+
