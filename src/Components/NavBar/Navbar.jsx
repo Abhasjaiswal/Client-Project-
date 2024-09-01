@@ -5,6 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const Navbar = () => {
   const [isServiceDropdownOpen, setServiceDropdownOpen] = useState(false);
   const [isServeDropdownOpen, setServeDropdownOpen] = useState(false);
+  const [isExpertiseDropdownOpen, setExpertiseDropdownOpen] = useState(false);
 
   const handleServiceMouseEnter = () => {
     setServiceDropdownOpen(true);
@@ -21,6 +22,12 @@ const Navbar = () => {
   const handleServeMouseLeave = () => {
     setServeDropdownOpen(false);
   };
+  const handleExpertiseMouseEnter = () => {
+    setExpertiseDropdownOpen(true);
+  };
+  const handleExpertiseMouseLeave = () => {
+    setExpertiseDropdownOpen(false);
+    };
 
   return (
     <header className="navbar">
@@ -94,7 +101,23 @@ const Navbar = () => {
           </li>
           <li><a href="/about">About Us</a></li>
 
-          <li><a href="#">Expertise</a></li>
+          <li 
+            className="dropdown"
+            onMouseEnter={handleExpertiseMouseEnter}
+            onMouseLeave={handleExpertiseMouseLeave}
+          >
+            <a href="#">Expertise <i className="fas fa-caret-down"></i></a>
+            {isExpertiseDropdownOpen && (
+              <ul className="dropdown-menu">
+                <li><a href="/markets">Markets</a></li>
+                <li><a href="/production">Production</a></li>
+                <li><a href="/data">Data</a></li>
+                <li><a href="/digital">Digital</a></li>
+                <li><a href="/personalization">Personalization</a></li>
+                <li><a href="/cms">CMS</a></li>
+              </ul>
+            )}
+          </li>
           <li><a href="#">Contact Us</a></li>
         </ul>
         <button className="connect-btn">Let's Connect</button>

@@ -3,13 +3,13 @@ import './style.css';
 
 const BusinessSection = () => {
   return (
-    <section className="business-section">
-      <div className="overlay"></div>
-      <div className="content">
-        <h2>Business</h2>
-        <div className="divider"></div>
-      </div>
-    </section>
+    <div className="business-section">
+                <div className="overlay"></div>
+                <div className="content">
+                    <h1 className="business-title">Business</h1>
+                    <div className="underline"></div>
+                </div>
+            </div>
   );
 };
 
