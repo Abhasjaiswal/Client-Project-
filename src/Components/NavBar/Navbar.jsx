@@ -73,10 +73,13 @@ const Navbar = () => {
             <a href="/business">Service <i className="fas fa-caret-down"></i></a>
             {isServiceDropdownOpen && (
               <ul className="dropdown-menu">
-                <li><a href="/design">Design</a></li>
-                <li><a href="/development">Development</a></li>
-                <li><a href="/consulting">Consulting</a></li>
-                <li><a href="/marketing">Marketing</a></li>
+                <li><a href="/business">Business</a></li>
+                <li><a href="/concert">Concert</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/school">School</a></li>
+                <li><a href="/technology ">Technology</a></li>
+                <li><a href="/transport">Transport</a></li>
+
               </ul>
             )}
           </li>

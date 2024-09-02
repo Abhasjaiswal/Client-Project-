@@ -3,6 +3,7 @@ import Navbar from "../../../Components/NavBar/Navbar"
 import Footer from "../../../Components/Footer/Footer"
 
 
+
 const Landing = () => {
     return (
       <div>
