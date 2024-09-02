@@ -109,7 +109,7 @@ const Navbar = () => {
             onMouseEnter={handleExpertiseMouseEnter}
             onMouseLeave={handleExpertiseMouseLeave}
           >
-            <a href="#">Expertise <i className="fas fa-caret-down"></i></a>
+            <a href="/expertise">Expertise <i className="fas fa-caret-down"></i></a>
             {isExpertiseDropdownOpen && (
               <ul className="dropdown-menu">
                 <li><a href="/markets">Markets</a></li>
