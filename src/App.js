@@ -10,6 +10,7 @@ import Markets from "./Pages/Expertise/Markets/Markets"
 import Personalization from "./Pages/Expertise/Personalization/Personalization"
 import Production from "./Pages/Expertise/Production/Production"
 import ContactUs from "./Pages/Contact/Contact"
+import Products from "./Pages/Products/ProductsPage"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/production"element={<Production/>}/>
           <Route path="/personalization"element={<Personalization/>}/>
           <Route path="/contact"element={<ContactUs/>}/>
+          <Route path="/products"element={<Products/>}/>
         </Routes>
       </Router>
     </div>
