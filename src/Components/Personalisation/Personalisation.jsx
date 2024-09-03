@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles.css';
-import img1 from "../../assets/Images/Layer-1-1024x684.png";
-import img2 from "../../assets/Images/card.jpg";
-import img3 from "../../assets/Images/cards.jpg";
-import img4 from "../../assets/Images/cardss.jpg";
-
+import img1 from "../../assets/Images/per1.jpg";
+import img2 from "../../assets/Images/per2.jpg";
+import img3 from "../../assets/Images/per3.jpg";
+import img4 from "../../assets/Images/per4.jpg";
+import img5 from "../../assets/Images/per5.jpg";
 
 const MarketSection = () => {
     const sections = [
@@ -21,15 +21,15 @@ const MarketSection = () => {
             alignLeft: false,
         },
         {
-            title: "MARKETING PROFILES",
+            title: "ROUTING AND FULFILLMENT",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim eum itaque delectus minima officiis, id, ipsum, consequatur cumque quaerat ea accusamus sunt facere nostrum corporis exercitationem rerum blanditiis commodi? Inventore fugiat libero ea quas id placeat amet vitae alias recusandae veniam nostrum consectetur ex soluta similique magnam harum delectus earum in maxime, modi quia omnis. Ipsum deleniti illum natus.",
             image: img3,
             alignLeft: true,
         },
         {
-            title: "CITIZENS IDENTIFICATION",
+            title: "STOCK MANAGEMENT",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim eum itaque delectus minima officiis, id, ipsum, consequatur cumque quaerat ea accusamus sunt facere nostrum corporis exercitationem rerum blanditiis commodi? Inventore fugiat libero ea quas id placeat amet vitae alias recusandae veniam nostrum consectetur ex soluta similique magnam harum delectus earum in maxime, modi quia omnis. Ipsum deleniti illum natus.",
-            image: img4,
+            image: img5,
             alignLeft: false,
         },
     ];
@@ -39,9 +39,9 @@ const MarketSection = () => {
             <div className="market-section">
                 <div className="overlay"></div>
                 <div className="content">
-                    <h1 className="market-title">MARKETS</h1>
+                    <h1 className="market-title">SECURE DOCUMENTS</h1>
                     <div className="underline"></div>
-                    <p className="market-subtitle">PAYMENT AND IDENTIFICATION</p>
+                    <p className="market-subtitle">PERSONALIZATION SPECIALIST</p>
                 </div>
             </div>
 
