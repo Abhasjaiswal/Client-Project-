@@ -1,0 +1,272 @@
+/* Market Section */
+.market-section {
+    position: relative;
+    background-image: url('../../assets/Images/image.JPG'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 40vh; /* Adjust height relative to viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Corrected 'left' to 'flex-start' */
+    color: white;
+    padding-left: 4vw; /* Use viewport width for horizontal padding */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 31, 117, 0.85); /* Dark blue color with transparency */
+    z-index: 1; /* Ensures the overlay is on top of the image but below the text */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2; /* Ensures the text is on top of the overlay */
+    padding-left: 10vw; /* Adjust padding for responsive design */
+  }
+  
+  .market-title {
+    font-size: 4rem; /* Use relative units for font size */
+    margin: 0;
+  }
+  
+  .underline {
+    width: 50px; /* Width of the red underline */
+    height: 4px; /* Height of the red underline */
+    background-color: red; /* Red color for the underline */
+    margin: 10px 0; /* Space between title and subtitle */
+  }
+  
+  .market-subtitle {
+    font-size: 2rem; /* Use relative units for font size */
+    margin: 0;
+  }
+  
+  /* Info Sections */
+  .info-sections {
+    padding-bottom: 15vh;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between sections */
+    padding-inline: 13vw; /* Adjust padding for responsive design */
+  }
+  
+  .info-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .left-align {
+    flex-direction: row;
+  }
+  
+  .right-align {
+    flex-direction: row-reverse;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem; /* Use relative units for font size */
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: red;
+    margin-top: 5px;
+  }
+  
+  .section-description {
+    font-size: 1rem; /* Use relative units for font size */
+    color: #333;
+  }
+  
+  /* Placeholder for Images */
+  /* .image-content {
+    flex: 1;
+    padding: 20px;
+  } */
+  
+  /* .section-image {
+    width: 100%;
+    height: 200px; 
+    background-color: #e0e0e0; 
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(100px); 
+    animation: slideIn 1s forwards; 
+  }
+  
+  .left-align .section-image {
+    transform: translateX(-100px); } */
+  
+  /* Animation Keyframes */
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Move to original position */
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .market-section {
+      padding-left: 7vw; /* Reduce padding for smaller screens */
+    }
+  
+    .content {
+      padding-left: 8vw;
+    }
+  
+    .market-title {
+      font-size: 3.5rem; /* Reduce font size for smaller screens */
+    }
+  
+    .market-subtitle {
+      font-size: 1.8rem; /* Reduce font size for smaller screens */
+    }
+  
+    .info-sections {
+      padding-inline: 6vw;
+      padding-top: 3vw;
+      padding-bottom: 3vw;
+    }
+  
+    .section-title {
+      font-size: 1.8rem; /* Reduce font size for smaller screens */
+    }
+  }
+  /* 
+  @media (max-width: 768px) {
+    .market-section {
+      height: 35vh; 
+      padding-left: 5vw;
+    }
+  
+    .content {
+      padding-left: 6vw;
+    }
+  
+    .market-title {
+      font-size: 3rem; 
+    }
+  
+    .market-subtitle {
+      font-size: 1.6rem; 
+    }
+  
+    .info-sections {
+      padding-top: 3vw;
+      padding-bottom: 3vw;
+      padding-inline: 4vw;
+    }
+  
+    .section-title {
+      font-size: 1.6rem;  
+    }
+  /* } */ 
+  
+  @media (max-width: 768px) {
+    .market-section {
+      height: 30vh; /* Adjust height for mobile devices */
+      padding-left: 3vw;
+    }
+  
+    .content {
+      padding-left: 4vw;
+    }
+  
+    .market-title {
+      font-size: 2.5rem; /* Further reduce font size for mobile devices */
+    }
+  
+    .underline {
+      margin: 10px auto; /* Center the underline on mobile */
+    }
+  
+    .market-subtitle {
+      font-size: 1.4rem; /* Further reduce font size for mobile devices */
+    }
+  
+    .info-sections {
+      padding-inline: 4vw;
+    }
+  
+    .section-title {
+      font-size: 1.4rem; /* Further reduce font size for mobile devices */
+    }
+  
+    .info-section {
+      flex-direction: column; /* Stack content vertically on small screens */
+      text-align: center; /* Center text for mobile */
+    }
+  /* 
+    .image-content {
+      padding: 10px;
+    }
+  
+    .section-image {
+      border-radius: 5px; 
+      height: 150px;
+    } */
+  }
+  /* Placeholder for Images */
+  .image-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .section-image {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    max-width: 400px; /* Set a maximum width for the images */
+    height: auto; /* Maintain aspect ratio while scaling */
+    max-height: 340px; /* Set a maximum height for the images */
+    background-color: #e0e0e0; /* Light gray color as placeholder */
+    border-radius: 10px;
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+    opacity: 0;
+    transform: translateX(100px); /* Start off-screen */
+    animation: slideIn 1s forwards; /* Animation for sliding in */
+  }
+  
+  .left-align .section-image {
+    transform: translateX(-100px); /* Slide in from the left for left-aligned sections */
+  }
+  
+  /* Responsive Adjustments for Consistent Image Dimensions */
+  @media (max-width: 1024px) {
+    .section-image {
+      max-width: 300px; /* Reduce maximum width on smaller screens */
+      max-height: 200px; /* Reduce maximum height on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-image {
+      max-width: 250px; /* Further reduce maximum width on tablets */
+      max-height: 180px; /* Further reduce maximum height on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-image {
+      max-width: 200px; /* Further reduce maximum width on mobile */
+      max-height: 150px; /* Further reduce maximum height on mobile */
+    }
+  }
+  
