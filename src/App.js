@@ -11,6 +11,7 @@ import Personalization from "./Pages/Expertise/Personalization/Personalization"
 import Production from "./Pages/Expertise/Production/Production"
 import ContactUs from "./Pages/Contact/Contact"
 import Products from "./Pages/Products/ProductsPage"
+import Concerts from "./Pages/Services/Concert/Concert"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/personalization"element={<Personalization/>}/>
           <Route path="/contact"element={<ContactUs/>}/>
           <Route path="/products"element={<Products/>}/>
+          <Route path="/concert"element={<Concerts/>}/>
         </Routes>
       </Router>
     </div>
