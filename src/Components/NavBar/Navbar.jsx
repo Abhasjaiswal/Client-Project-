@@ -70,7 +70,7 @@ const Navbar = () => {
             onMouseEnter={handleServiceMouseEnter}
             onMouseLeave={handleServiceMouseLeave}
           >
-            <a href="/business">Service <i className="fas fa-caret-down"></i></a>
+            <a href="/services">Service <i className="fas fa-caret-down"></i></a>
             {isServiceDropdownOpen && (
               <ul className="dropdown-menu">
                 <li><a href="/business">Business</a></li>
