@@ -12,8 +12,9 @@ const Landing = () => {
         <div>
             <Navbar />
             <Header 
-                title="Concert" 
-                subtitle="" 
+                title="Concert Landing"   //Pass the title here 
+                subtitle="Experience the Best Live Performances" //pass the subtitle here 
+                backgroundImage={require('../../../assets/Images/production8.jpg')} // Pass the image path here
             />
             <WhatWe />
             <ConcertProduct />
