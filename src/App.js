@@ -13,6 +13,10 @@ import ContactUs from "./Pages/Contact/Contact"
 import Products from "./Pages/Products/ProductsPage"
 import Concerts from "./Pages/Services/Concert/Concert"
 import Service from "./Pages/Services/Services"
+import Events from "./Pages/Services/Events/Events";
+import School from "./Pages/Services/School/School";
+import Technology from "./Pages/Services/Technology/Technology";
+import Transport from "./Pages/Services/Transport/Transport";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -33,6 +37,11 @@ function App() {
           <Route path="/products"element={<Products/>}/>
           <Route path="/concert"element={<Concerts/>}/>
           <Route path="/services" element={<Service/>}/>
+          <Route path="/events" element={<Events/>}/>
+          <Route path="/technology" element={<Technology/>}/>
+          <Route path="/transport" element={<Transport/>}/>
+          <Route path="/school" element={<School/>}/>
+
         </Routes>
       </Router>
     </div>
