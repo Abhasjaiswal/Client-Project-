@@ -1,0 +1,46 @@
+/* Market Section */
+.header-section {
+    position: relative;
+    background-image: url('../../assets/Images/image.JPG'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 40vh; /* Adjust height relative to viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Corrected 'left' to 'flex-start' */
+    color: white;
+    padding-left: 4vw; /* Use viewport width for horizontal padding */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 31, 117, 0.85); /* Dark blue color with transparency */
+    z-index: 1; /* Ensures the overlay is on top of the image but below the text */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2; /* Ensures the text is on top of the overlay */
+    padding-left: 10vw; /* Adjust padding for responsive design */
+  }
+  
+  .header-title {
+    font-size: 4rem; /* Use relative units for font size */
+    margin: 0;
+  }
+  
+  .underline {
+    width: 50px; /* Width of the red underline */
+    height: 4px; /* Height of the red underline */
+    background-color: red; /* Red color for the underline */
+    margin: 10px 0; /* Space between title and subtitle */
+  }
+  
+  .header-subtitle {
+    font-size: 2rem; /* Use relative units for font size */
+    margin: 0;
+  }
