@@ -12,6 +12,7 @@ import Production from "./Pages/Expertise/Production/Production"
 import ContactUs from "./Pages/Contact/Contact"
 import Products from "./Pages/Products/ProductsPage"
 import Concerts from "./Pages/Services/Concert/Concert"
+import Service from "./Pages/Services/Services"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/contact"element={<ContactUs/>}/>
           <Route path="/products"element={<Products/>}/>
           <Route path="/concert"element={<Concerts/>}/>
+          <Route path="/services" element={<Service/>}/>
         </Routes>
       </Router>
     </div>
