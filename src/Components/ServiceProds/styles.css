@@ -1,0 +1,50 @@
+.concerts-product {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.concerts-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+}
+
+.concerts-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #FF0000;
+    margin: 10px auto 0;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.4;
+}
