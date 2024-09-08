@@ -17,6 +17,14 @@ import Events from "./Pages/Services/Events/Events";
 import School from "./Pages/Services/School/School";
 import Technology from "./Pages/Services/Technology/Technology";
 import Transport from "./Pages/Services/Transport/Transport";
+import Health from "./Pages/Whoweserve/Health/Health";
+import Multimedia from "./Pages/Whoweserve/Health/Health";
+import NationalIdentity from "./Pages/Whoweserve/Health/Health";
+import Payment from "./Pages/Whoweserve/Health/Health";
+import Retail from "./Pages/Whoweserve/Health/Health";
+import Tranport from "./Pages/Whoweserve/Health/Health";
+import Wwserve from "../src/Components/Wwserve/whoweserpage"
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -41,6 +49,13 @@ function App() {
           <Route path="/technology" element={<Technology/>}/>
           <Route path="/transport" element={<Transport/>}/>
           <Route path="/school" element={<School/>}/>
+          <Route path="/health" element={<Health/>}/>
+          <Route path="/multimedia" element={<Multimedia/>}/>
+          <Route path="/payment" element={<Payment/>}/>
+          <Route path="/nationalidentity" element={<NationalIdentity/>}/>
+          <Route path="/retail" element={<Retail/>}/>
+          <Route path="/tranport" element={<Tranport/>}/>
+          <Route path="/wwserve" element={<Wwserve/>}/>
 
         </Routes>
       </Router>
