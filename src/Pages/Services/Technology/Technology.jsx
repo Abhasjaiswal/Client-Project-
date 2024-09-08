@@ -2,9 +2,10 @@ import React from "react";
 import Navbar from "../../../Components/NavBar/Navbar";
 import Footer from "../../../Components/Footer/Footer";
 import image1 from "../../../assets/Images/production1.jpg"  // Import Images for the cards 
-
+import Security from "../../../Components/EmpoweringSec/Security"
 import Header from "../../../Components/Header/Header"; // Import the Header component
 import Products from "../../../Components/ServiceProds/Products";
+import WhoWe from "../../../Components/WhoWeServeTech/Serve"
 
 const Technology = () => {
     const cards = [   // Create Cards here 
@@ -32,11 +33,13 @@ const Technology = () => {
                 // subtitle="Experience the Best Live Performances" //pass the subtitle here 
                 backgroundImage={require('../../../assets/Images/cms5.jpg')} // Pass the image path here
             />
+            <Security/>
             <Products
             title="Technology" 
             cards={cards} 
 
             />
+            <WhoWe/>
             <Footer />
         </div>
     );

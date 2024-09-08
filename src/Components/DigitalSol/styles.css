@@ -1,0 +1,46 @@
+.digital-solutions-container {
+    background-color: #2A1483; /* Dark blue background */
+    color: white; /* White text */
+    padding: 40px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif; /* You can use your preferred font */
+  }
+  
+  .digital-solutions-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .underline {
+    width: 50px;
+    height: 3px;
+    background-color: #FF4D4D; /* Red color under the title */
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .digital-solutions-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .digital-solutions-list {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  
+  .digital-solutions-list li {
+    margin-bottom: 15px;
+  }
+  
+  .digital-solutions-footer {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  
