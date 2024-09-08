@@ -1,0 +1,37 @@
+.banner-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text span {
+  position: relative;
+}
+
+.banner-text span:after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: red;
+}
