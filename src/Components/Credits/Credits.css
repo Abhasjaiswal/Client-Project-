@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap'); /* Importing Poppins font */
+
+.credits {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
