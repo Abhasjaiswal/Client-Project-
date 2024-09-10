@@ -18,12 +18,12 @@ import School from "./Pages/Services/School/School";
 import Technology from "./Pages/Services/Technology/Technology";
 import Transport from "./Pages/Services/Transport/Transport";
 import Health from "./Pages/Whoweserve/Health/Health";
-import Multimedia from "./Pages/Whoweserve/Health/Health";
-import NationalIdentity from "./Pages/Whoweserve/Health/Health";
-import Payment from "./Pages/Whoweserve/Health/Health";
-import Retail from "./Pages/Whoweserve/Health/Health";
-import Tranport from "./Pages/Whoweserve/Health/Health";
-import Wwserve from "../src/Components/Wwserve/whoweserpage"
+import Multimedia from "./Pages/Whoweserve/Multimedia/Multimedia";
+import NationalIdentity from "./Pages/Whoweserve/NationalIdentity/NationalIdentity";
+import Payment from "./Pages/Whoweserve/Payment/Payment";
+import Retail from "./Pages/Whoweserve/Retail/Retail";
+import Transport1 from "./Pages/Whoweserve/Transport/Transport";
+// import Wwserve from "../src/Components/Wwserve/whoweserpage"
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
@@ -52,10 +52,10 @@ function App() {
           <Route path="/health" element={<Health/>}/>
           <Route path="/multimedia" element={<Multimedia/>}/>
           <Route path="/payment" element={<Payment/>}/>
-          <Route path="/nationalidentity" element={<NationalIdentity/>}/>
+          <Route path="/identity" element={<NationalIdentity/>}/>
           <Route path="/retail" element={<Retail/>}/>
-          <Route path="/tranport" element={<Tranport/>}/>
-          <Route path="/wwserve" element={<Wwserve/>}/>
+          <Route path="/transport1" element={<Transport1/>}/>
+          {/* <Route path="/wwserve" element={<Wwserve/>}/> */}
 
         </Routes>
       </Router>

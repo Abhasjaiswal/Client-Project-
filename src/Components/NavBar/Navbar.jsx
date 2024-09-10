@@ -98,7 +98,7 @@ const Navbar = () => {
                 <li><a href="/identity">National Identity</a></li>
                 <li><a href="/payment">Payment</a></li>
                 <li><a href="/retail">Retail</a></li>
-                <li><a href="/transport">Transport</a></li>
+                <li><a href="/transport1">Transport</a></li>
               </ul>
             )}
           </li>
