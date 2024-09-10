@@ -3,7 +3,7 @@ import './Credits.css';
 const Credits = () => {
   return (
     <div className="credits">
-      <p> © Developed by Abhas & Vanshika </p>
+      <p> © Developed by Abhas Jaiswal & Vanshika Verma </p>
     </div>
   );
 };
