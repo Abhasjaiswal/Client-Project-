@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../../Components/NavBar/Navbar"
 import Wwserve from "../../../Components/Wwserve/whoweserpage"
 import Footer from "../../../Components/Footer/Footer"
-import Contact from "../../../Components/LandContact/contact"
+// import Contact from "../../../Components/LandContact/contact"
 
 
 
@@ -11,7 +11,7 @@ const Landing = () => {
       <div>
         <Navbar />
         <Wwserve/>
-        <Contact/>
+        {/* <Contact/> */}
         <Footer/>
       </div>
     );
