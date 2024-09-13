@@ -1,5 +1,8 @@
 import React from "react";
 import "./style.css"; // Import your CSS file here
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaEnvelope } from "react-icons/fa";
+
 
 function ContactInfo() {
   return (
@@ -21,11 +24,7 @@ function ContactInfo() {
 
         <div className="contact-info">
           <div className="contact-card">
-            <img
-              src="https://img.icons8.com/material-outlined/48/000000/new-post.png"
-              alt="Mail Icon"
-              className="contact-icon"
-            />
+          <FaEnvelope className="contact-icon" />
             <h3>Company Mail</h3>
             <p>sales.macreations@gmail.com</p>
             <p>macreations@gmail.com</p>
