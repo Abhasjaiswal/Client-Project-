@@ -1,7 +1,7 @@
 /* Market Section */
-.market-section {
+.market-section-ww {
   position: relative;
-  background-image: url('../../assets/Images/production8.jpg'); /* Path to your image */
+  /* background-image: url('../../assets/Images/cms4.webp'); Path to your image */
   background-size: cover;
   background-position: center;
   height: 40vh; /* Adjust height relative to viewport height */
@@ -22,59 +22,58 @@
   z-index: 1; 
 } */
 
-.content {
+.content-ww {
   position: relative;
   z-index: 2; /* Ensures the text is on top of the overlay */
   width: 80%;
-  margin: 0 ;
+  margin: 0;
   padding: 40px 0;
   padding-left: 9vw; /* Adjust padding for responsive design */
 }
 
-.market-title {
+.market-title-ww {
   font-size: 4rem; /* Use relative units for font size */
   margin: 0;
 }
 
-.underline {
+.underline-ww {
   width: 50px; /* Width of the red underline */
   height: 4px; /* Height of the red underline */
   background-color: red; /* Red color for the underline */
   margin: 10px 0; /* Space between title and subtitle */
 }
 
-.market-subtitle {
+.market-subtitle-ww {
   font-size: 2rem; /* Use relative units for font size */
   margin: 0;
 }
+
 /* Container for the entire content */
-.info-container {
+.info-container-ww {
   padding-bottom: 15vh;
   padding-top: 10vh;
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding-inline: 13vw;
-
 }
 
 /* Individual sections styling */
-.section {
+.section-ww {
   margin-bottom: 0vh;
 }
 
 /* Title styling */
-.title {
+.title-ww {
   font-size: 2rem;
   font-family: 'Arial', sans-serif;
   font-weight: bold;
   color: #000;
   position: relative;
- 
 }
 
 /* Red underline styling */
-.underline {
+.underline-ww {
   display: block;
   width: 80px;
   height: 3px;
@@ -83,7 +82,7 @@
 }
 
 /* Description text styling */
-.description {
+.description-ww {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #333;
@@ -91,25 +90,22 @@
   margin-top: 20px;
 }
 
-
-
-
 /* Credential Section */
-.credential-section {
+.credential-section-ww {
   background-color: #1a2c8f; /* Dark blue background */
-  padding: 50px; 
+  padding: 50px;
   color: white; /* Text color */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.credential-content {
+.credential-content-ww {
   width: 80%; /* Make the content responsive */
   text-align: left; /* Align text to the left */
 }
 
-.credential-title {
+.credential-title-ww {
   font-size: 28px; /* Large font for the title */
   font-family: 'Arial', sans-serif;
   font-weight: bold;
@@ -119,19 +115,20 @@
   margin-bottom: 0px;
 }
 
-.underline {
+.underline-ww {
   width: 100px; /* Underline width */
   height: 4px; /* Thickness */
   background-color: red; /* Red underline */
   margin-bottom: 5vh; /* Space between underline and paragraphs */
 }
 
-.credential-paragraph {
+.credential-paragraph-ww {
   font-size: 1.1rem; /* Paragraph font size */
   line-height: 1.6; /* Adjust line height for readability */
   margin-bottom: 20px; /* Space between paragraphs */
 }
-.image-row {
+
+.image-row-ww {
   display: flex;
   justify-content: center; /* Spacing between the images */
   align-items: center;
@@ -140,14 +137,14 @@
   margin: 4vw 0;
 }
 
-.image-container {
+.image-container-ww {
   flex: 1; /* Each image container takes up equal width */
   max-width: 300px; /* Limit the maximum width for the images */
   border-radius: 15px; /* Rounded corners */
   overflow: hidden; /* Ensures the corners of the image remain rounded */
 }
 
-.image-container img {
+.image-container-ww img {
   width: 100%; /* Ensure the image takes full width of the container */
   height: auto; /* Keep aspect ratio */
   border-radius: 15px; /* Matches the container's rounded corners */

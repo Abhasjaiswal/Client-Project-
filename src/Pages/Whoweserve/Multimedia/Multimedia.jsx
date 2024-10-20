@@ -16,22 +16,16 @@ const Landing1 = () => {
 
   const sections = [
     {
-      title: "HEALTH CARDS",
+      title: "MULTIMEDIA CONTENT SUPPLIERS",
       paragraphs: [
-        "Colour Stop delivers health cards and social insurance cards across every continent, recognizing their sensitive nature for two key reasons: they serve as proof of national identity and grant access to essential medical services.",
-        "Our health cards adhere to stringent security standards akin to national ID cards, featuring intricate electronic specifications. Ensuring the utmost protection of sensitive information, our challenge lies in continuously updating medical records and the holder’s entitlements.",
-      ],
-    },
-    {
-      title: "VIRTUAL FILES",
-      paragraphs: [
-        "Access to healthcare for beneficiaries is contingent upon their contributions or inherent entitlements, regulated by health authorities and subject to regular fluctuations.",
-        "Colour Stop provides digital solutions enabling health cardholders to access their medical records online. This access can be shared with healthcare practitioners at the patient’s discretion, fostering collaboration and informed decision-making in healthcare management.",
+        "Colour Stop serves as a trusted partner to multimedia content providers, including telecommunications operators, download platforms, and network access suppliers.",
+        "In today’s digital landscape, these entities often face threats from fraudsters. Recognizing this challenge, Colour Stop has developed specialized products and services that prioritize reliability and security. Our solutions are tailored to meet the unique needs of our partners in the multimedia content industry, providing them with peace of mind and enhanced protection against fraud.",
+        "Colour Stop’s commitment to delivering reliable and secure solutions is greatly appreciated by our partners, reinforcing our position as a trusted ally in safeguarding their operations and ensuring a seamless experience for their customers.",
       ],
     },
   ];
 
-  const credentialTitle = "CARD MANAGEMENT SYSTEMS";
+  const credentialTitle = "TELEPHONE SUPPLIERS";
   const credentialParagraphs = [
     "Colour Stop annually produces hundreds of millions of prepaid scratch cards for phone top-up services, a critical component of telecommunications today.",
     "These scratch cards are not just simple vouchers; they are valuable assets that demand a stringent level of security throughout the entire process, from electronic money encoding management to production, packaging, and distribution.",
