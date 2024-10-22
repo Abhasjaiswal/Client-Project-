@@ -96,7 +96,6 @@
 // };
 
 // export default Multimedia;
-
 import React from "react";
 import "./styles.css";
 import Contactus from "../LandContact/contact";
@@ -106,29 +105,29 @@ const Multimedia = ({ marketTitle, marketSubtitle, sections, credentialTitle, cr
   return (
     <>
       <div
-        className="market-section"
+        className="market-section-ww"
         style={{
           backgroundImage: `url(${backgroundImage})`, // Dynamically set background image
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="content">
-          <h1 className="market-title">{marketTitle}</h1>
-          <div className="underline"></div>
-          <p className="market-subtitle">{marketSubtitle}</p>
+        <div className="content-ww">
+          <h1 className="market-title-ww">{marketTitle}</h1>
+          <div className="underline-ww"></div>
+          <p className="market-subtitle-ww">{marketSubtitle}</p>
         </div>
       </div>
 
-      <div className="info-container">
+      <div className="info-container-ww">
         {sections.map((section, index) => (
-          <div className="section" key={index}>
-            <h2 className="title">
+          <div className="section-ww" key={index}>
+            <h2 className="title-ww">
               {section.title}
-              <span className="underline"></span>
+              <span className="underline-ww"></span>
             </h2>
             {section.paragraphs.map((paragraph, idx) => (
-              <p className="description" key={idx}>
+              <p className="description-ww" key={idx}>
                 {paragraph}
               </p>
             ))}
@@ -136,12 +135,12 @@ const Multimedia = ({ marketTitle, marketSubtitle, sections, credentialTitle, cr
         ))}
       </div>
 
-      <div className="credential-section">
-        <div className="credential-content">
-          <h1 className="credential-title">{credentialTitle}</h1>
-          <div className="underline"></div>
+      <div className="credential-section-ww">
+        <div className="credential-content-ww">
+          <h1 className="credential-title-ww">{credentialTitle}</h1>
+          <div className="underline-ww"></div>
           {credentialParagraphs.map((paragraph, idx) => (
-            <p className="credential-paragraph" key={idx}>
+            <p className="credential-paragraph-ww" key={idx}>
               {paragraph}
             </p>
           ))}
@@ -152,9 +151,9 @@ const Multimedia = ({ marketTitle, marketSubtitle, sections, credentialTitle, cr
         <Contactus />
       </div>
 
-      <div className="image-row">
+      <div className="image-row-ww">
         {images.map((image, idx) => (
-          <div className="image-container" key={idx}>
+          <div className="image-container-ww" key={idx}>
             <img src={image.src} alt={image.alt} />
           </div>
         ))}

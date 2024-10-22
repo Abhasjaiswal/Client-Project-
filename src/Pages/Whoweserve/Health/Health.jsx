@@ -5,7 +5,7 @@ import Footer from "../../../Components/Footer/Footer";
 import image1 from "../../../assets/Images/health1.jpg"
 import image2 from "../../../assets/Images/health2.jpg";
 import image3 from "../../../assets/Images/health3.jpg";
-import backgroundImage from "../../../assets/Images/production8.jpg"; // Import your image
+import backgroundImage from "../../../assets/Images/production2.jpg"; // Import your image
 
 const Landing = () => {
   const images = [

@@ -1,8 +1,9 @@
 .lanyard-section {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 80px;
+  padding: 40px 100px; /* Increased side margin for larger screens */
   background-color: #fff;
 }
 
@@ -38,10 +39,11 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .lanyard-section {
     flex-wrap: wrap;
-    padding: 30px 60px;
+    flex-direction: column; /* Stack image under text */
+    padding: 30px 60px; /* Adjusted side padding */
   }
 
   .text-content, .image-content {
@@ -52,6 +54,10 @@
   .image-content {
     margin-top: 20px;
     justify-content: center;
+  }
+
+  .text-content h1 {
+    font-size: 2.2rem;
   }
 }
 
@@ -65,7 +71,7 @@
   }
 
   .lanyard-section {
-    padding: 20px 40px;
+    padding: 20px 40px; /* Further reduced padding */
   }
 }
 
@@ -79,6 +85,6 @@
   }
 
   .lanyard-section {
-    padding: 20px;
+    padding: 20px 30px; /* Minimal padding for small screens */
   }
 }

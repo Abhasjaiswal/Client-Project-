@@ -58,5 +58,76 @@
     line-height: 1.8;
     color: #333;
     margin-bottom: 20px;
+  }/* Banner Section Styles */
+.banner-section {
+  position: relative; /* To position the overlay */
+  background-image: url(../../assets/Images/home.JPG); /* Add the path to your image here */
+  background-size: cover;
+  background-position: center;
+  height: 350px; /* Adjust height as per the design */
+  display: flex;
+  align-items: center;
+  margin-top: 15vh;
+  padding-left: 30vh; /* Moves the text more to the right */
+  z-index: 1; /* Ensures the content stays above the overlay */
+}
+
+.banner-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 255, 0.7); /* Blue overlay effect with 70% opacity */
+  z-index: -1; /* Overlay stays behind the content */
+}
+
+.banner-content {
+  color: white;
+  z-index: 1; /* Ensures the content is above the overlay */
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background-color: red;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-section {
+    height: 250px; /* Adjust for smaller screens */
+    padding-left: 40px; /* Moves the text more to the right for smaller screens */
   }
-  
+
+  .banner-content h1 {
+    font-size: 36px;
+  }
+
+  .underline {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-section {
+    height: 200px; /* Smaller height for mobile */
+    padding-left: 30px; /* Moves the text more to the right for mobile */
+  }
+
+  .banner-content h1 {
+    font-size: 28px;
+  }
+
+  .underline {
+    width: 60px;
+  }
+}
