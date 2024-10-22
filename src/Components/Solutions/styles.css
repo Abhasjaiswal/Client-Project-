@@ -2,7 +2,7 @@
 .lanyard-container {
     background-color: #1b1f74;
     color: #ffffff;
-    padding: 50px;
+    padding: 60px 160px; /* Increased left and right padding */
     font-family: 'Arial', sans-serif;
 }
 
@@ -60,6 +60,10 @@
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
+    .lanyard-container {
+        padding: 40px 80px; /* Reduced padding for tablets and medium screens */
+    }
+
     .text-image-wrapper {
         flex-direction: column;
         align-items: center;
@@ -82,6 +86,10 @@
 }
 
 @media (max-width: 768px) {
+    .lanyard-container {
+        padding: 30px 40px; /* Further reduced padding for small screens */
+    }
+
     .industries-grid {
         grid-template-columns: 1fr;
     }

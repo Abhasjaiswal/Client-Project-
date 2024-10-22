@@ -4,6 +4,7 @@ import './styles.css';
 
 const ExpertiseSection = () => {
   return (
+    <>
     <section className="expertise-section">
       <div className="expertise-banner">
         <h2>SERVICES</h2>
@@ -29,6 +30,13 @@ const ExpertiseSection = () => {
         </p>
       </div>
     </section>
+    <section className="banner-section">
+      <div className="banner-content">
+        <h1>LANYARDS</h1>
+        <div className="underline"></div>
+      </div>
+    </section>
+    </>
   );
 };
 

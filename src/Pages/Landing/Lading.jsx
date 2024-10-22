@@ -18,9 +18,10 @@ const Landing = () => {
         <OurServices />
         <Solutions />
         <Lanyards />
-        <Videos />
-        <LandingContact/>
         <OurClient/>
+        <LandingContact/>
+        
+        {/* <Videos /> */}
         <Footer/>
       </div>
     );
