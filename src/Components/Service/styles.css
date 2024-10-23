@@ -1,75 +1,71 @@
+/* Base Styles for Expertise Section */
 .expertise-section {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .expertise-banner {
-    background: linear-gradient(to bottom, #0026d3 0%, #0044d9 100%);
-    color: white;
-    text-align: center;
-    padding: 80px 0;
-    position: relative;
-  }
-  
-  .expertise-banner h2 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    position: relative;
-    display: inline-block;
-  
-  }
-  
-  .banner-underline {
-    width: 15vh;
-    height: 3px;
-    background-color: red;
-    margin: 0 auto;
-    margin-top: 1vh;
-  
-  }
-  
-  .expertise-content {
-    background-color: white;
-    padding-left: 30vh;
-    padding-right: 30vh;
-    /* padding-inline: 30vh; */
-    margin-top: 15vh;
-    text-align: left;
-  }
-  
-  .expertise-content h3 {
-    font-size: 2.9rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #333;
-    font-weight: bolder;
-  }
-  
-  .red-underline {
-    width: 35vh;
-    height: 3px;
-    background-color: red;
-    margin-bottom: 30px;
-  }
-  
-  .expertise-content p {
-  
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #333;
-    margin-bottom: 20px;
-  }/* Banner Section Styles */
+  font-family: 'Arial', sans-serif;
+}
+
+.expertise-banner {
+  background: linear-gradient(to bottom, #0026d3 0%, #0044d9 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+}
+
+.expertise-banner h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.banner-underline {
+  width: 15vh;
+  height: 3px;
+  background-color: red;
+  margin: 1vh auto;
+}
+
+.expertise-content {
+  background-color: white;
+  padding-left: 30vh;
+  padding-right: 30vh;
+  margin-top: 15vh;
+  text-align: left;
+  margin-bottom: 15vh;
+}
+
+.expertise-content h3 {
+  font-size: 2.9rem;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  color: #333;
+}
+
+.red-underline {
+  width: 35vh;
+  height: 3px;
+  background-color: red;
+  margin-bottom: 30px;
+}
+
+.expertise-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Banner Section Styles */
 .banner-section {
-  position: relative; /* To position the overlay */
-  background-image: url(../../assets/Images/home.JPG); /* Add the path to your image here */
+  position: relative;
+  background-image: url(../../assets/Images/home.JPG);
   background-size: cover;
   background-position: center;
-  height: 350px; /* Adjust height as per the design */
+  height: 350px;
   display: flex;
   align-items: center;
-  margin-top: 15vh;
-  padding-left: 30vh; /* Moves the text more to the right */
-  z-index: 1; /* Ensures the content stays above the overlay */
+  padding-left: 30vh;
+  padding-right: 30vh;
+  z-index: 1;
 }
 
 .banner-section::before {
@@ -79,19 +75,18 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 255, 0.7); /* Blue overlay effect with 70% opacity */
-  z-index: -1; /* Overlay stays behind the content */
+  background-color: rgba(0, 0, 255, 0.7);
+  z-index: -1;
 }
 
 .banner-content {
   color: white;
-  z-index: 1; /* Ensures the content is above the overlay */
+  z-index: 1;
 }
 
 .banner-content h1 {
   font-size: 48px;
   font-weight: bold;
-  margin: 0;
 }
 
 .underline {
@@ -101,11 +96,111 @@
   margin-top: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Lanyards Section Styles */
+.lanyards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vh 30vh;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+  min-height: 80vh;
+}
+
+.lanyards-text {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.lanyards-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.underline {
+  width: 50px;
+  height: 3px;
+  background-color: red;
+  margin: 10px 0;
+}
+
+.lanyards-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.lanyards-image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lanyards-image img {
+  max-width: 100%;
+  min-width: 80%;
+  border-radius: 8px;
+}
+
+/* Media Queries */
+
+/* Tablets and Medium Screens */
+@media (max-width: 1100px) {
+  .expertise-content {
+    padding-left: 10vh;
+    padding-right: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
   .banner-section {
-    height: 250px; /* Adjust for smaller screens */
-    padding-left: 40px; /* Moves the text more to the right for smaller screens */
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+
+  .lanyards-container {
+    flex-direction: column;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .lanyards-text {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .lanyards-image {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 5vh;
+
+  }
+
+  .lanyards-image img {
+    max-width: 70%;
+    min-height: fit-content;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .expertise-banner h2 {
+    font-size: 2rem;
+  }
+
+  .expertise-content,
+  .banner-section,
+  .lanyards-container {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  .banner-section {
+    height: 250px;
   }
 
   .banner-content h1 {
@@ -115,12 +210,25 @@
   .underline {
     width: 80px;
   }
+
+  .lanyards-text,
+  .lanyards-image {
+    width: 100%;
+    text-align: left;
+  }
+
+  .lanyards-image img {
+    max-width: 80%;
+    min-height: fit-content;
+  }
 }
 
+/* Small Mobile Screens */
 @media (max-width: 480px) {
   .banner-section {
-    height: 200px; /* Smaller height for mobile */
-    padding-left: 30px; /* Moves the text more to the right for mobile */
+    height: 200px;
+    padding-left: 3vh;
+    padding-right: 3vh;
   }
 
   .banner-content h1 {
@@ -129,5 +237,15 @@
 
   .underline {
     width: 60px;
+  }
+
+  .expertise-content,
+  .lanyards-container {
+    padding-left: 3vh;
+    padding-right: 3vh;
+  }
+
+  .lanyards-image img {
+    max-width: 90%;
   }
 }
